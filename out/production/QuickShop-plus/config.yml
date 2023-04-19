@@ -1,0 +1,7 @@
+# 到了指定的时间会自动重置限购和收购限制
+# 是否启用自动重置
+resetTimeEanble: false
+# 重置的时间24小时制, 0是凌晨12点
+resetTime: 0
+# 这个不要动，用来判定是否定时重置过的
+isExecute: false

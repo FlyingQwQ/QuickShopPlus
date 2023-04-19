@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="QuickShopPlus">
+    <output-path>$PROJECT_DIR$/../../TestServer/plugins</output-path>
+    <root id="archive" name="QuickShopPlus.jar">
+      <element id="module-output" name="QuickShop-plus" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/item-nbt-api-plugin-2.11.1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,83 @@
+name: QuickShopPlus
+main: top.kuoer.QuickShopPlus
+version: 1.0
+author: _TwT
+depend: [ QuickShop ]
+api-version: 1.16
+commands:
+  quickshopplus:
+    description: QuickShopPlus 命令
+    aliases: [qsp]
+    usage: /qsp
+
+permissions:
+  quickshopplus.*:
+    description:  获得所有的权限
+    children:
+      quickshopplus.reload: true
+      quickshopplus.others: true
+      quickshopplus.set: true
+      quickshopplus.rstime: true
+      quickshopplus.shopping.reset: true
+      quickshopplus.shopping.resetall: true
+      quickshopplus.shopping.modify: true
+      quickshopplus.shopping.remove: true
+      quickshopplus.shopping.delete: true
+      quickshopplus.buying.reset: true
+      quickshopplus.buying.resetall: true
+      quickshopplus.buying.modify: true
+      quickshopplus.buying.remove: true
+      quickshopplus.buying.delete: true
+
+
+  quickshopplus.help:
+    description: 帮助
+    default: true
+  quickshopplus.reload:
+    description: 重载配置
+    default: op
+  quickshopplus.others:
+    description: 可以对他人的商店进行限购修改
+    default: op
+
+  quickshopplus.shopping.reset:
+    description: 重置玩家对这个商店的限购
+    default: true
+  quickshopplus.shopping.resetall:
+    description: 重置所有玩家对这个商店的限购
+    default: true
+  quickshopplus.shopping.modify:
+    description: 修改玩家对这个商店的限购
+    default: true
+  quickshopplus.shopping.remove:
+    description: 解除玩家对这个商店的限购
+    default: true
+  quickshopplus.shopping.delete:
+    description: 删除这个商店的限购
+    default: true
+  quickshopplus.shopping.set:
+    description: 可以对商店进行限制
+    default: true
+
+  quickshopplus.buying.reset:
+    description: 重置玩家对这个商店的出售限制
+    default: true
+  quickshopplus.buying.resetall:
+    description: 重置所有玩家对这个商店的出售限制
+    default: true
+  quickshopplus.buying.modify:
+    description: 修改玩家对这个商店的出售限制
+    default: true
+  quickshopplus.buying.remove:
+    description: 解除玩家对这个商店的出售限制
+    default: true
+  quickshopplus.buying.delete:
+    description: 删除这个商店的出售限制
+    default: true
+  quickshopplus.buying.set:
+    description: 可以对商店进行限制
+    default: true
+
+  quickshopplus.rstime:
+    description: 取消对这个商店的自动重置
+    default: true
